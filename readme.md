@@ -24,4 +24,8 @@ Voici [le site](TO DO WHEN HOSTED) en question.
 -   Retrait du Webpack des choses inutiles
 -   MAJ du Readme
 
+### 1.0.2 `12 août 2023`
+
+-   Rajout d'un htaccess pour indiquer le fichier de départ
+
 </details>
