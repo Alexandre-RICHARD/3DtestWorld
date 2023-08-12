@@ -2,7 +2,7 @@
 
 Bonjour, bienvenue sur ce petit répo de test très peu avancé de création de monde 3D
 
-Voici [le site](3dtestworld.rial7539.odns.fr) en question.
+Voici [le site](http://3dtestworld.rial7539.odns.fr/) en question.
 
 ## Historique des versions
 
@@ -35,5 +35,11 @@ Voici [le site](3dtestworld.rial7539.odns.fr) en question.
 ### 1.0.5 `12 août 2023`
 
 -   Rajout du lien du site dans le readme.md
+
+### 1.0.6 `13 août 2023`
+
+-   Retrait de dotenv-webpack, inutile pour ce projet
+-   Mise à jour des packages npm
+-   Rajout d'un script pnpm pour mettre à jour plus facilement les dépendances
 
 </details>

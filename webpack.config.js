@@ -1,6 +1,4 @@
 const path = require("path");
-// Pour récupérer nos variables d'environnement en fonction de si on est en prod ou en dev et avoir la bonne adresse d'API
-const Dotenv = require("dotenv-webpack");
 // Pour vider le dossier de build lors d'un nouveau build ou d'un npm start
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 // Utiliser pour copier des fichier stockés dans public dans le dossier de build

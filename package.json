@@ -1,9 +1,10 @@
 {
     "name": "3d_test_world",
-    "version": "1.0.4",
+    "version": "1.0.6",
     "scripts": {
         "start": "cross-env NODE_ENV=development webpack serve --history-api-fallback",
         "build": "cross-env NODE_ENV=production webpack",
+        "update": "pnpm up",
         "lint": "eslint src/**/*.js",
         "lint:fix": "eslint --fix src/**/*.js",
         "clean": "rd /s /q .build",
@@ -29,7 +30,6 @@
         "css-loader": "^6.8.1",
         "css-minimizer-webpack-plugin": "^4.2.2",
         "cssnano": "^5.1.15",
-        "dotenv-webpack": "^8.0.1",
         "esbuild": "^0.14.54",
         "eslint": "^8.47.0",
         "eslint-import-resolver-alias": "^1.1.2",
