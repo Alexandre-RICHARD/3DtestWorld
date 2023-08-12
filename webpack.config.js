@@ -71,11 +71,6 @@ module.exports = {
         },
     },
     plugins: [
-        // Pour récupérer nos variables d'environnement en fonction de si on est en prod ou en dev et avoir la bonne adresse d'API
-        new Dotenv({
-            path: envPath,
-            safe: true,
-        }),
         // Pour vider le dossier de build lors d'un nouveau build ou d'un npm start
         new CleanWebpackPlugin(),
         // Afin d'indiquer les fichiers de départ qui seront utilisé dans la compilation, ici index.html et son favicon
@@ -98,7 +93,7 @@ module.exports = {
             filename: "css/[name].css",
         }),
         // Plugin qui ouvrira un onglet à chaque run/build pour montrer la taille des différents package dans les fichiers compilé et aider à mieux les gérer
-        // new BundleAnalyzerPlugin(), //! POur activer ou désactiver
+        // new BundleAnalyzerPlugin(), //! Pour activer ou désactiver
     ],
     // Des plugins visant à améliorer la vitesse de compilation en plus d'en améliorer l'optimisation et la taille
     optimization: {
@@ -130,25 +125,6 @@ module.exports = {
                         },
                     },
                 ],
-            },
-            // JSX loader
-            {
-                test: /\.jsx?$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader",
-                    options: {
-                        cacheDirectory: true,
-                    },
-                },
-            },
-            // Fonts loader
-            {
-                test: /\.(woff2?|eot|ttf|otf)$/,
-                loader: "file-loader",
-                options: {
-                    outputPath: "fonts/",
-                },
             },
             // Pas de loader pour les images, elles sont traités comme des assets, ce qui change leurs utilisations surtout pour les petites images transformées en base64 sinon
             {
