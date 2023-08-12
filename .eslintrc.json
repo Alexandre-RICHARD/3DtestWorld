@@ -1,0 +1,31 @@
+{
+    "parserOptions": {
+        "parser": "@babel/eslint-parser",
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "extends": ["eslint:recommended"],
+    "env": {
+        "node": true,
+        "browser": true,
+        "es2021": true
+    },
+    "rules": {
+        "brace-style": ["error", "1tbs"],
+        "indent": ["error", 4],
+        "linebreak-style": ["error", "windows"],
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"]
+    },
+    "settings": {
+        "import/resolver": {
+            "alias": {
+                "extensions": [".js"],
+                "map": [
+                    ["src", "./src"],
+                    ["app", "./src"]
+                ]
+            }
+        }
+    }
+}

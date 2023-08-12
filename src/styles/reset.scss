@@ -1,0 +1,161 @@
+/* Reset perso par Alexandre-Richard, tiré en partir du reset.css d'Eric Mayer, version 2011 */
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+button,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+input,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+select,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+textarea,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    color: inherit;
+    background-color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    font-weight: 300;
+    text-decoration: none;
+    line-height: normal;
+    vertical-align: baseline;
+    appearance: none;
+    font-style: normal;
+    font-variant: normal;
+    font-family: inherit;
+    text-rendering: inherit;
+    text-indent: 0;
+    text-transform: none;
+    transition: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video {
+    height: auto;
+    max-width: 100%;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a,
+label,
+button {
+    cursor: pointer;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}

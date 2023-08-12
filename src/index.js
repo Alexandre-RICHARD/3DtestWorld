@@ -1,3 +1,6 @@
+// Fichier initial pour le le Javascript
+import * as THREE from "three";
+
 const movementSpeed = 1.4;
 const mouseSensibility = 0.03;
 const deadZone = 2;
@@ -26,7 +29,12 @@ const texture = textureLoader.load("./testTexture.jpg");
 texture.repeat.x = surfaceSize / textureSize;
 texture.repeat.z = surfaceSize / textureSize;
 
-const geometry = new THREE.PlaneBufferGeometry(surfaceSize, surfaceSize, surfaceSize - 1, surfaceSize - 1);
+const geometry = new THREE.BufferGeometry(
+    surfaceSize,
+    surfaceSize,
+    surfaceSize - 1,
+    surfaceSize - 1
+);
 const material = new THREE.MeshBasicMaterial({
     map: texture,
     side: THREE.DoubleSide,
@@ -48,20 +56,22 @@ const blueMaterial = new THREE.LineBasicMaterial({
     linewidth: axisSize,
 }); // Matériau bleu pour l'axe z
 
-const xGeometry = new THREE.Geometry();
-xGeometry.vertices.push(new THREE.Vector3(-500, 0, 0)); // Point de départ de l'axe x
-xGeometry.vertices.push(new THREE.Vector3(500, 0, 0)); // Point d'arrivée de l'axe x
-
-const yGeometry = new THREE.Geometry();
-yGeometry.vertices.push(new THREE.Vector3(0, -500, 0)); // Point de départ de l'axe y
-yGeometry.vertices.push(new THREE.Vector3(0, 500, 0)); // Point d'arrivée de l'axe y
-
-const zGeometry = new THREE.Geometry();
-zGeometry.vertices.push(new THREE.Vector3(0, 0, -500)); // Point de départ de l'axe z
-zGeometry.vertices.push(new THREE.Vector3(0, 0, 500)); // Point d'arrivée de l'axe z
-
+const pointsX = [];
+pointsX.push(new THREE.Vector3(-500, 0, 0)); // Point de départ de l'axe x
+pointsX.push(new THREE.Vector3(500, 0, 0)); // Point d'arrivée de l'axe x
+let xGeometry = new THREE.BufferGeometry().setFromPoints(pointsX);
 const xAxis = new THREE.Line(xGeometry, redMaterial);
+
+const pointsY = [];
+pointsY.push(new THREE.Vector3(0, -500, 0)); // Point de départ de l'axe y
+pointsY.push(new THREE.Vector3(0, 500, 0)); // Point d'arrivée de l'axe y
+let yGeometry = new THREE.BufferGeometry().setFromPoints(pointsY);
 const yAxis = new THREE.Line(yGeometry, greenMaterial);
+
+const pointsZ = [];
+pointsZ.push(new THREE.Vector3(0, 0, -500)); // Point de départ de l'axe z
+pointsZ.push(new THREE.Vector3(0, 0, 500)); // Point d'arrivée de l'axe z
+let zGeometry = new THREE.BufferGeometry().setFromPoints(pointsZ);
 const zAxis = new THREE.Line(zGeometry, blueMaterial);
 
 scene.add(xAxis);
@@ -111,11 +121,11 @@ function updateCameraPosition() {
 
 let isMouseOut = false;
 
-document.addEventListener("mouseout", (event) => {
+document.addEventListener("mouseout", () => {
     isMouseOut = true;
 });
 
-document.addEventListener("mouseenter", (event) => {
+document.addEventListener("mouseenter", () => {
     isMouseOut = false;
 });
 
@@ -149,10 +159,7 @@ function updateCameraRotation() {
         const dx = -(mouseX - prevMouseX);
         const dy = -(mouseY - prevMouseY);
 
-        if (
-            Math.abs(dx) > deadZone ||
-            Math.abs(dy) > deadZone
-        ) {
+        if (Math.abs(dx) > deadZone || Math.abs(dy) > deadZone) {
             camera.rotation.y += dx * mouseSensibility;
             camera.rotation.x += dy * mouseSensibility;
         }
