@@ -2,7 +2,7 @@
 
 Bonjour, bienvenue sur ce petit répo de test très peu avancé de création de monde 3D
 
-Voici [le site](TO DO WHEN HOSTED) en question.
+Voici [le site](3dtestworld.rial7539.odns.fr) en question.
 
 ## Historique des versions
 
@@ -31,5 +31,9 @@ Voici [le site](TO DO WHEN HOSTED) en question.
 ### 1.0.4 `12 août 2023`
 
 -   Petit changement dans le package.json
+
+### 1.0.5 `12 août 2023`
+
+-   Rajout du lien du site dans le readme.md
 
 </details>
