@@ -1,8 +1,6 @@
 {
-    "name": "project-to-define",
-    "version": "1.0.0",
-    "description": "PROJET A DEFINIR",
-    "main": "webpack.config.js",
+    "name": "3d_test_world",
+    "version": "1.0.4",
     "scripts": {
         "start": "cross-env NODE_ENV=development webpack serve --history-api-fallback",
         "build": "cross-env NODE_ENV=production webpack",
@@ -13,10 +11,8 @@
     },
     "repository": {
         "type": "git",
-        "url": "git"
+        "url": "git+https://github.com/Alexandre-RICHARD/3DtestWorld.git"
     },
-    "keywords": [],
-    "author": "",
     "license": "ISC",
     "devDependencies": {
         "@babel/core": "^7.22.10",
