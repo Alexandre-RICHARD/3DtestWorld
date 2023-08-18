@@ -42,4 +42,8 @@ Voici [le site](http://3dtestworld.rial7539.odns.fr/) en question.
 -   Mise à jour des packages npm
 -   Rajout d'un script pnpm pour mettre à jour plus facilement les dépendances
 
+### 1.0.7 `18 août 2023`
+
+-   Rajout de deux lignes de configurations pour webpack et vueJS
+
 </details>
