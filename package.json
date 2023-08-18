@@ -1,6 +1,6 @@
 {
     "name": "3d_test_world",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "scripts": {
         "start": "cross-env NODE_ENV=development webpack serve --history-api-fallback",
         "build": "cross-env NODE_ENV=production webpack",

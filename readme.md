@@ -46,4 +46,8 @@ Voici [le site](http://3dtestworld.rial7539.odns.fr/) en question.
 
 -   Rajout de deux lignes de configurations pour webpack et vueJS
 
+### 1.0.8 `18 août 2023`
+
+-   Retrait de ces deux lignes qui n'était pas utile pour ce projet en particulier
+
 </details>
