@@ -2,7 +2,8 @@
 
 Bonjour, bienvenue sur ce petit répo de test très peu avancé de création de monde 3D
 
-Voici [le site](http://3dtestworld.rial7539.odns.fr/) en question.
+Voici [le site](https://3dtestworld.alexandre-richard.fr/) en question.
+Et [son répo](https://github.com/Alexandre-RICHARD/3DtestWorld)
 
 ## Historique des versions
 
@@ -49,5 +50,10 @@ Voici [le site](http://3dtestworld.rial7539.odns.fr/) en question.
 ### 1.0.8 `18 août 2023`
 
 -   Retrait de ces deux lignes qui n'était pas utile pour ce projet en particulier
+
+### 1.0.9 `21 août 2023`
+
+-   Maintenant que j'ai récupéré le nom de domaine, actualisation de tous les liens sortant
+-   Mise à jour des packages npm
 
 </details>
