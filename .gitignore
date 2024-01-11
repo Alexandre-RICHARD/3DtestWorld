@@ -1,7 +1,3 @@
-.build/
-.vscode/
+build/
 node_modules/
 public/.htaccess
-.prettierrc.js
-package-lock.json
-pnpm-lock.yaml

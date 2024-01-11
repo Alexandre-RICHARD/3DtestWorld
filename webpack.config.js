@@ -47,12 +47,12 @@ module.exports = {
         open: true,
         historyApiFallback: true,
         port,
-        static: "./.build",
+        static: "./build",
         hot: true,
     },
-    // On indique le point de sortie/de création des fichiers. Ici ./.build
+    // On indique le point de sortie/de création des fichiers. Ici ./build
     output: {
-        path: path.resolve(__dirname, ".build"),
+        path: path.resolve(__dirname, "build"),
         publicPath: publicPath,
         filename: "js/[name].[contenthash].js",
         assetModuleFilename: "images/[hash][ext][query]",

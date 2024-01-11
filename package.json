@@ -7,8 +7,8 @@
         "update": "pnpm up",
         "lint": "eslint src/**/*.js",
         "lint:fix": "eslint --fix src/**/*.js",
-        "clean": "rd /s /q .build",
-        "clean:all": "rd /s /q node_modules .build & rd /s /q .build & del /q package-lock.json & del /q pnpm-lock.yaml"
+        "clean": "rd /s /q build",
+        "clean:all": "rd /s /q node_modules build & rd /s /q build & del /q package-lock.json & del /q pnpm-lock.yaml"
     },
     "repository": {
         "type": "git",
